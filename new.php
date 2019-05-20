@@ -16,7 +16,7 @@
             }
         </style>
     </head>
-    <body style="overflow: hidden;">
+    <body style="overflow: hidden; background-color:#000;color:white;">
         <div class="container">
             <h1>Hello, world!</h1>
         </div>
@@ -56,7 +56,10 @@
         <script src="js/dismissibleAlerts.js"></script>
         <script>
             $(document).ready(function(){
-                $('.alert-css').dismissibleAlerts();
+                $.dismissibleAlerts({
+                    className : 'alert-css',
+                    dismissIntervalTime : 1500
+                });
                 // var timeOut = 1000;
                 // $(".alert-css").each(function() {
                 //     if ($(this).prev('.alert-css').length > 0) {
